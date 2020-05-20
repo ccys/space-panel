@@ -1,0 +1,36 @@
+{
+    "type": [
+        {
+            "label": "显示器",
+            "count": 12
+        },
+        {
+            "label": "设备",
+            "count": 44
+        },
+        {
+            "label": "功放",
+            "count": 33
+        },
+        {
+            "label": "灯泡1",
+            "count": 44
+        },
+        {
+            "label": "设备2",
+            "count": 33
+        }
+    ],
+    "life": [
+        {
+            "label": "灯泡1",
+            "current": 100,
+            "max": 200
+        },
+        {
+            "label": "灯泡2",
+            "current": 130,
+            "max": 200
+        }
+    ]
+}

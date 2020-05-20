@@ -1,0 +1,102 @@
+.panel-page {
+    min-width: 1000px;
+    min-height: 700px;
+    background: #121b73 url('../../assets/img/bg@2x.png') no-repeat center;
+    background-size: cover;
+    color: #fff;
+
+    .header {
+        background: linear-gradient(to right, #0F48A8, #08227A);
+        position: relative;
+        text-align: center;
+        color: #fff;
+
+        .time {
+            position: absolute;
+            font-size: 16px;
+            left: 50px;
+        }
+
+        .title {
+            font-size: 30px;
+            font-weight: bolder;
+            width: 421px;
+            background-size: contain;
+            margin: 0 auto;
+            background: url('../../assets/img/biaoti@2x.png') no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    .content {
+        padding: 0 30px;
+
+
+        .chartWrap {
+            background-color: rgba(0, 0, 0, .2);
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(255, 255, 255, .4);
+            margin-top: 30px;
+            position: relative;
+
+            .section-head {
+                position: absolute;
+                top: -15px;
+                left: 50%;
+                height: 30px;
+                line-height: 30px;
+                margin-left: -75px;
+                width: 150px;
+                color: #fff;
+                background-color: blue;
+                font-size: 14px;
+                text-align: center;
+                font-weight: bold;
+            }
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 50vh;
+            padding: 30px 0;
+            min-height: 300px;
+            background-image: url('../../assets/img/gailan@2x.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 200px;
+
+            Row {
+                flex: 1;
+            }
+        }
+
+        .center-num {
+            text-align: center;
+            border-radius: 4px;
+            border: 1px solid rgba(56, 192, 255, .7);
+            background: rgba(0, 0, 0, .2);
+            box-shadow: 0 0 3px rgba(255, 255, 255, .2);
+            padding: 10px;
+
+            .num-text {
+                font-size: 20px;
+                color: #38C0FF;
+                font-weight: 900;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .num-label {
+                font-size: 12px;
+                color: #fff;
+            }
+        }
+    }
+
+    .footer {
+        background: none;
+        text-align: center;
+        color: #fff;
+    }
+}
