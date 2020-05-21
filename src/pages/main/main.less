@@ -1,3 +1,22 @@
+@life-warn-color: #FF8A3B;
+@life-error-color: #EF6064;
+@life-ok-color: #29D7B0;
+
+.warn {
+    color: @life-warn-color;
+    background-color: @life-warn-color;
+}
+
+.error {
+    color: @life-error-color;
+    background-color: @life-error-color;
+}
+
+.ok {
+    color: @life-ok-color;
+    background-color: @life-ok-color;
+}
+
 .panel-page {
     min-width: 1000px;
     min-height: 700px;
@@ -15,6 +34,8 @@
             position: absolute;
             font-size: 16px;
             left: 50px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            letter-spacing: 1px;
         }
 
         .title {
@@ -31,24 +52,24 @@
     .content {
         padding: 0 30px;
 
-
         .chartWrap {
             background-color: rgba(0, 0, 0, .2);
             border-radius: 5px;
             box-shadow: 0 0 5px rgba(255, 255, 255, .4);
-            margin-top: 30px;
+            margin-top: 50px;
             position: relative;
 
             .section-head {
                 position: absolute;
-                top: -15px;
+                top: -22px;
                 left: 50%;
-                height: 30px;
-                line-height: 30px;
-                margin-left: -75px;
-                width: 150px;
+                height: 45px;
+                line-height: 45px;
+                width: 250px;
+                margin-left: -125px;
                 color: #fff;
-                background-color: blue;
+                background: url(../../assets/img/biaoti_leixing@2x.png) no-repeat center;
+                background-size: contain;
                 font-size: 14px;
                 text-align: center;
                 font-weight: bold;
@@ -92,11 +113,89 @@
                 color: #fff;
             }
         }
+
+        .life-legend {
+            padding: 40px 40% 0;
+            text-align: center;
+            width: 100%;
+
+            .legend {
+                width: 15px;
+                height: 6px;
+            }
+        }
+
+        .progress-wrap {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+
+            .progress {
+                width: 100%;
+                position: relative;
+                height: 10px;
+                border-radius: 5px;
+                background-color: #944A545D;
+
+                .progess-bar {
+                    height: 100%;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    left: -3px;
+
+                    &::after {
+                        content: ' ';
+                        position: absolute;
+                        right: -15px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        border: 6px solid #fff;
+                        background: #fff;
+                    }
+
+                    &.ok::after {
+                        border-color: @life-ok-color;
+                    }
+
+                    &.warn::after {
+                        border-color: @life-warn-color;
+                    }
+
+                    &.error::after {
+                        border-color: @life-error-color;
+                    }
+
+                    span {
+                        flex: 1;
+                        color: #fff;
+                        font-size: 12;
+                    }
+                }
+            }
+
+            .progress-legend {
+                text-align: left;
+
+                .legend-icon {
+                    background: none;
+                    margin-left: 20px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .life-footer {
+            opacity: 0.5;
+            padding: 20px 40px;
+        }
     }
 
     .footer {
         background: none;
         text-align: center;
-        color: #fff;
+        color: #15DBF5;
     }
 }

@@ -13,15 +13,25 @@
             "count": 33
         },
         {
-            "label": "灯泡1",
+            "label": "灯泡",
             "count": 44
         },
         {
-            "label": "设备2",
+            "label": "其他",
             "count": 33
         }
     ],
     "life": [
+        {
+            "label": "灯泡1",
+            "current": 0,
+            "max": 200
+        },
+        {
+            "label": "灯泡2",
+            "current": 200,
+            "max": 200
+        },
         {
             "label": "灯泡1",
             "current": 100,
@@ -29,7 +39,12 @@
         },
         {
             "label": "灯泡2",
-            "current": 130,
+            "current": 180,
+            "max": 200
+        },
+        {
+            "label": "灯泡2",
+            "current": 20,
             "max": 200
         }
     ]
